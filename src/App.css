@@ -1,31 +1,89 @@
-.App {
+.title {
+  font-size: 1.5em;
   text-align: center;
+  color: #333;
+  font-family: Roboto, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loading {
+  font-size: 1.5em;
+  text-align: center;
+  color: #333;
+  font-family: Roboto, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.panel-counter-registers {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.list {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+ align-items: center;
+  justify-content: center;
+}
+
+.card {
+   width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+a:link {
+  text-decoration: none;
+  color: #333;
 }
 
-.heart {
-  color: #ff0000;
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin: 20px 10px 30px 10px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
 }
 
-.small {
-  font-size: 0.75rem;
+.card-body {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000;
+  margin: 20px;
+  font-family: Roboto, sans-serif;
+}
+
+.more-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.btn-load-more {
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
